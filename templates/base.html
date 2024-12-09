@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}To-Do List{% endblock %}</title>
+
+    <!-- Link to Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Common Header -->
+        <header>
+            <h1>To-Do List Application</h1>
+        </header>
+
+        <!-- Page-specific content will be inserted here -->
+        {% block content %}{% endblock %}
+
+        <!-- Common Footer -->
+        <footer>
+            <p>&copy; 2024 To-Do List App</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="static/js/scriept.js"></script>
+</body>
+</html>
